@@ -1,0 +1,330 @@
+/* ------fonts----- */
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:ital,wght@0,400;0,600;1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+}
+
+body {
+font-family: 'Work Sans', sans-serif;
+
+}
+
+/* -----common element----- */
+.description {
+    font-weight: 400;
+    font-size: 17px;
+    color: #727272;
+    line-height: 26px;
+    padding-top: 10px;
+    
+}
+.common-button {
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    border-style: none;
+}
+
+/*-----Header Section-----*/
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+       
+}
+.section-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+nav ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    
+}
+
+nav li {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font: 500;
+    color: #424242;   
+}
+
+.header-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    column-gap: 50px;
+    text-align: center;
+    padding: 150px 350px 50px 350px;
+    gap: 50px;
+    
+}
+
+.header-title{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    
+}
+
+/*---------------------------------
+            Quick-list-section SECTION
+    -----------------------------------*/
+
+.Quick-list-section {
+    display: flex;
+    padding: 50px 300px 100px 300px;
+    gap: 73px;
+}
+
+.grid-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.title-style {
+    color: #727272;
+    font-weight: 500;
+}
+
+.title-feature {
+    color: #FF900E;
+}
+
+/*---------------------------------
+            FEATURES SECTION
+    -----------------------------------*/
+
+.feature-main {
+    display: flex; 
+    padding: 50px 300px 100px 300px;
+    gap: 73px;   
+    position: relative;
+    }
+.title-design {
+    display: flex;
+    gap: 21px;
+    padding-bottom: 20px;
+    
+}
+.vl {
+    width: 5px;
+    height: 106px;
+    background-color: #FF900E;
+      }
+
+
+.four-features {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.each-feature{
+    padding: 40px 30px;
+    box-shadow: 10px 10px 10px 10px rgba(11, 11, 12, 0.034);
+    border-radius: 8px;
+}
+
+.feature-main img {
+    
+    height: 982px;
+}
+
+.feature-button {
+    position: absolute;
+    bottom: 150px;
+    right: 750px;
+
+    background-color: #FF900E;
+    width: 300px;
+    height: 180px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.feature-main span {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+/* ----------------------------------
+            FACTS SECTION
+    -----------------------------------  */
+
+.fact-section {
+    padding: 50px 300px 100px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.fact-info {
+    display: flex;
+    justify-content: space-around;
+}
+.fact-items {
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    width: 242px;
+    height: 242px;
+    display: flex;  /* tried doing it with padding but boxes size don't match*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition:  ease, transform 5s;
+    
+}
+
+.fact-items:hover {
+    background-color: #ff8f0ee1;
+    border:none;
+    transform: rotate(30deg);
+    
+}
+
+
+/* ----------------------------------
+            SHOW CASE SECTION
+    -----------------------------------  */
+
+.design-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 300px 100px 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.show-case {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.show-case img {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    
+}
+
+/* ----------------------------------
+            SPONSOR SECTION
+    -----------------------------------  */
+
+.sponsor-section {
+    padding: 50px 300px 100px 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+}
+/* could't convert the logos to black and white*/
+.sponsor-icon {
+    display: flex;
+    gap: 150px;
+}
+
+/* ----------------------------------
+            FOOTER SECTION
+    -----------------------------------  */
+
+footer {
+    position: absolute;
+    right: 300px;
+    border-radius: 8px;
+    padding: 20px 300px 20px 300px;
+    width: 800px;
+    background-color:  #FFF4E7;
+    text-align: center;
+}
+
+/* ----------------------------------
+            Media responsive
+    -----------------------------------  */
+
+@media only screen and (max-width:688px) {
+
+    header, .header-details, .sponsor-section {
+        padding: 50px 0px 0px 0px;
+    }
+    nav, nav ul, .Quick-list-section {
+        flex-direction: column;   
+        gap: 20px; 
+        padding: 0px 0px 0px 0px;      
+    }
+    .grid-image,.show-case {
+        grid-template-columns: repeat(1, 1fr);  
+    }
+
+    .feature-main {
+        flex-direction: column; 
+        padding: 50px 0px 0px 0px; 
+        }
+    .each-feature{
+        padding: 5px;
+    }
+    .feature-main img {
+        height: 100%;
+    }
+    
+    .fact-section, .design-section {
+        padding: 50px 0px 0px 0px;
+        gap: 10px;
+    }
+    .fact-info { 
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;   
+    }
+    .sponsor-icon {
+        flex-direction: column;
+        margin-bottom: 50px;
+
+    }
+    footer {
+        position: static;
+        right: 0;
+        padding: 0;
+        width: 100%; 
+    }
+
+    .feature-button {
+        position: static;
+    }
+}
